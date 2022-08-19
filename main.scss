@@ -1,3 +1,7 @@
+$color-primary: #55c57a;
+$color-primary-light: #7ed56f;
+$color-primary-dark: #28b485;
+
 *,
 *::after,
 *::before {
@@ -15,7 +19,7 @@ body {
 	font-weight: 400;
 	/* font-size: 16px; */
 	line-height: 1.6;
-	color: #777;
+	// color: #777;
 	padding: 3rem;
 
 	box-sizing: border-box;
@@ -26,10 +30,10 @@ body {
 	/* background-color: red; */
 	background-image: linear-gradient(
 			to right bottom,
-			rgba(126, 213, 111, 0.801),
-			rgba(40, 180, 133, 0.801)
+			rgba($color-primary-light, 0.801),
+			rgba($color-primary-dark, 0.801)
 		),
-		url(../img/hero.jpg);
+		url(./img/hero.jpg);
 	background-size: cover;
 	background-position: top;
 	clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
